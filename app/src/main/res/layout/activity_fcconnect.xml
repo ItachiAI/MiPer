@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FCConnectActivity">
+
+    <TextView
+        android:id="@+id/panel-heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="#305fb4"
+        android:padding="15sp"
+        android:text="CONNEXION"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/head_ants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:text="AVEC MON IDENTIFIANT ANTS"
+        android:textColor="#305fb4"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel-heading"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/head_fc_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:text="AVEC FRANCECONNECT"
+        android:textColor="#305fb4"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect_btn"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_ants_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginRight="286dp"
+        android:text="Identifiant *"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_ants"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pwd_ants_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginRight="265dp"
+        android:text="Mot de passe *"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ants_id"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ants_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_ants_title"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ants_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_ants_title"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/fcconnect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_fc_connect"
+        app:srcCompat="@drawable/ic_fcbouton_blue"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/fr_band"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/panel-heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fr_band" />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="15px"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:paddingBottom="5px"
+        android:text="CONNEXION"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/head_fc_connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ants_pwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

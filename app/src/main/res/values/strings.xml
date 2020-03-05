@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MiPer</string>
+    <string name="d_j_un_compte">Déjà un compte ?</string>
+    <string name="pas_encore_de_compte">Pas encore de compte ?</string>
+    <string name="savemip_copyright_2020">SaveMiP - Copyright 2020</string>
+    <string name="savemip">SaveMip</string>
+    <string name="le_permis_point_en_toute_transparence">Gardez un oeil sur votre permis</string>
+    <string name="todo">TODO</string>
+</resources>
