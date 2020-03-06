@@ -46,12 +46,12 @@ public class FCConnectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fcconnect);
 
         // Onclick Login activity
-        fcconnect_btn.setOnClickListener(new View.OnClickListener() {
+        /*fcconnect_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("Clicked");
                 Intent intent = new Intent(FCConnectActivity.this, FIAuthActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }
