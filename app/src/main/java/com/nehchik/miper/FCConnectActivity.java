@@ -11,6 +11,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 public class FCConnectActivity extends AppCompatActivity {
     // START - Variables elements
     private TextView panel_heading;
@@ -41,17 +48,22 @@ public class FCConnectActivity extends AppCompatActivity {
     // END - FCConnect API variables
     /* ###########################################################################################*/
 
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fcconnect);
 
-        // Onclick Login activity
-        /*fcconnect_btn.setOnClickListener(new View.OnClickListener() {
+        fcconnect_btn = findViewById(R.id.fcconnect_btn);
+
+        // Onclick Login activitY
+        fcconnect_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("Clicked");
-                Intent intent = new Intent(FCConnectActivity.this, FCConnectActivity.class);
+                Intent intent = new Intent(FCConnectActivity.this, FCConnectResponseActivity.class);
+                intent.putExtra("url", url_builded);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
