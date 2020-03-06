@@ -11,13 +11,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
 public class FCConnectActivity extends AppCompatActivity {
     // START - Variables elements
     private TextView panel_heading;
@@ -33,23 +26,6 @@ public class FCConnectActivity extends AppCompatActivity {
 
     // END - Variables elements
     /* ###########################################################################################*/
-    // START - FCConnect API variables
-    public String fc_url = "https://fcp.integ01.dev-franceconnect.fr";
-    public String fc_auth = "/api/v1/authorize?";
-    public String client_id = "211286433e39cce01db448d80181bdfd005554b19cd51b3fe7943f6b3b86ab6e";
-    public String fs_url = "http://localhost:3000/login-callback";
-    public String fs_callback = "http://localhost:4242/callback";
-    public String logout_callback = "http://localhost:3000/logout";
-    public String scope = "openid%20given_name%20family_name%20birthdate%20gender%20birthplace%20birthcountry%20email%20preferred_username%20address%20phone";
-    public String state = "home";
-    public String nonce = "customNonce11";
-    public String url_builded = fc_url + "/api/v1/authorize?response_type=code&client_id=" +
-            client_id + "&redirect_uri=" + fs_url + "%2F" + fs_callback + "&scope=" + scope +"&state=" + state + "&nonce=" + nonce;
-    // END - FCConnect API variables
-    /* ###########################################################################################*/
-
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fcconnect);
@@ -59,9 +35,8 @@ public class FCConnectActivity extends AppCompatActivity {
         // Onclick Login activitY
         fcconnect_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Clicked");
                 Intent intent = new Intent(FCConnectActivity.this, FCConnectResponseActivity.class);
-                intent.putExtra("url", url_builded);
+                //intent.putExtra("url", url_builded);
                 startActivity(intent);
             }
         });

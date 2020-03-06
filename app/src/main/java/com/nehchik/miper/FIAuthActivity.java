@@ -12,6 +12,8 @@ public class FIAuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiauth);
 
+        fr_band = findViewById(R.id.fr_band);
+
         // Onclick Login activity
         /*fcconnect_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

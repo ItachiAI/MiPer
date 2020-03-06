@@ -7,14 +7,14 @@
     android:background="@drawable/logo_marianne">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/fr_band"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="536dp"
+        android:layout_marginBottom="546dp"
         app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_fr_band" />
 
     <TextView
@@ -23,11 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
         android:layout_marginLeft="177dp"
+        android:layout_marginTop="222dp"
         android:layout_marginEnd="175dp"
         android:layout_marginRight="175dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv1"
